@@ -16,5 +16,11 @@ int main(){
 
     cout << "var1 (Updated Address in memory) : " << p << endl;
     cout << "value : " << *p << endl; // Dereferencing a pointer
+
+    // Can't cross assign btw pointrs of diff types
+    int *p_int{nullptr};
+    double double_var{33};
+
+    // p_int = &double_var;  // compiler err
     return 0;
 }
